@@ -65,6 +65,20 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/images/qr_dana.png
+  
+  
+    - assets/images/avanza.png
+    - assets/images/brio.png
+    - assets/images/xenia.png
+    - assets/images/jazz.png
+    - assets/images/yaris.png
+    - assets/images/ertiga.png
+    - assets/images/agya.png
+    - assets/images/ayla.png
+    - assets/images/mobilio.png
+    - assets/images/calya.png
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
