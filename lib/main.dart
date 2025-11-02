@@ -3,6 +3,7 @@ import 'pages/splash_screen.dart';
 import 'pages/form_page.dart';
 import 'pages/car_list_page.dart';
 import 'pages/profile_page.dart';
+import 'pages/payment_page.dart'; // 🔥 Tambahkan ini
 
 void main() {
   runApp(RentalMobilApp());
@@ -20,6 +21,7 @@ class RentalMobilApp extends StatelessWidget {
         '/form': (context) => FormPage(),
         '/cars': (context) => CarListPage(),
         '/profile': (context) => ProfilePage(),
+        '/payment': (context) => PaymentPage(), // 🔥 Route baru
       },
     );
   }
