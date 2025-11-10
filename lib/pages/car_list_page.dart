@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'payment_page.dart';
 import 'profile_page.dart';
+import 'chat_page.dart'; // ✅ Tambahan import chat
 
 // ✅ Pindahkan daftar mobil ke luar class agar tidak error
 final List<Map<String, dynamic>> cars = [
@@ -96,8 +97,10 @@ class CarListPage extends StatefulWidget {
 class _CarListPageState extends State<CarListPage> {
   int _selectedIndex = 0;
 
+  // ✅ Tambahkan ChatPage di sini
   final List<Widget> _pages = [
     const CarListView(),
+    const ChatPage(),
     const ProfilePage(),
   ];
 
@@ -124,6 +127,11 @@ class _CarListPageState extends State<CarListPage> {
             icon: Icon(Icons.directions_car_filled_outlined),
             activeIcon: Icon(Icons.directions_car, color: Color(0xFFFF4B2B)),
             label: 'Cari',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_bubble_outline),
+            activeIcon: Icon(Icons.chat, color: Color(0xFFFF4B2B)),
+            label: 'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
